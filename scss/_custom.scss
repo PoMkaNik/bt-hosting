@@ -1,0 +1,265 @@
+/// change variables
+
+$light-gray: #f4f4f4;
+$medium-light-gray: #ccc;
+$medium-gray: #494b4c;
+$dark-gray: #3d3f40;
+$black: #000;
+$white: #fff;
+
+/// Top Nav
+
+.top-nav {
+  width: 100%;
+  background: $dark-gray;
+  padding: 0;
+  margin: 0;
+
+  &__container {
+    justify-content: space-between;
+
+    @media screen and (max-width: 785px) {
+      justify-content: center;
+    }
+  }
+
+  /*ul*/
+  &__menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+
+    &--left {
+      justify-content: flex-start;
+
+      @media screen and (max-width: 470px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      li:first-child {
+        padding-left: 0;
+      }
+    }
+
+    &--right {
+      justify-content: flex-end;
+
+      @media screen and (max-width: 470px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      a {
+        color: $white;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+
+    li {
+      padding: 10px 15px;
+      color: $white;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+
+      .svg-inline--fa {
+        padding-right: 8px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+/// Main Nav
+
+.main-nav {
+  background: $medium-gray;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: $white;
+
+  &--right {
+    ul {
+      display: flex;
+      list-style: none;
+      height: 100%;
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+
+      @media screen and (max-width: 39.99875em) {
+        justify-content: center;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 470px) {
+        flex-wrap: wrap;
+      }
+
+      li {
+        text-transform: uppercase;
+
+        @media screen and (max-width: 39.99875em) {
+          width: 100%;
+          padding-bottom: 10px;
+        }
+
+        a {
+          color: $white;
+          padding-bottom: 5px;
+
+          @media screen and (max-width: 39.99875em) {
+            display: block;
+          }
+
+          &:hover {
+            color: $secondary;
+          }
+
+          &.active {
+            color: $secondary;
+            border-bottom: 3px solid $secondary;
+          }
+        }
+      }
+    }
+  }
+
+  &--left {
+    h3 {
+      span {
+        color: lighten($primary, 30%);
+        background: $dark-gray;
+        padding: 5px 9px;
+        margin-right: 4px;
+      }
+
+      @media screen and (max-width: 63.99875em) {
+        font-size: 31px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+// Showcase
+
+.showcase {
+  background: url('../img/showcase.jpg') no-repeat -100px 0;
+  min-height: 450px;
+  color: $white;
+  display: flex;
+  align-items: center;
+
+  .grid-x:first-child .cell {
+    @media screen and (max-width: 63.99875em) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 39.99875em) {
+    min-height: 500px;
+    background-position: -200px 0;
+
+    .grid-container {
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 470px) {
+    min-height: auto;
+  }
+}
+
+.box {
+  width: 490px;
+
+  &__top {
+    padding: 20px 30px;
+    background: $primary;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    p {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    ul {
+      columns: 2;
+    }
+
+    @media screen and (max-width: 39.99875em) {
+      border-radius: 0;
+
+      h3 {
+        font-size: 31px;
+      }
+    }
+
+    @media screen and (max-width: 470px) {
+      text-align: center;
+
+      ul {
+        list-style: none;
+        margin-bottom: 0;
+        columns: 1;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 10px 30px;
+    background: $secondary;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    .pricing {
+      span {
+        font-size: 35px;
+        font-weight: bold;
+      }
+    }
+
+    h5 {
+      margin-bottom: 0;
+
+      a {
+        color: $white;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+
+    @media screen and (max-width: 39.99875em) {
+      border-radius: 0;
+
+      h5 {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 39.99875em) {
+}
+
+@media screen and (max-width: 63.99875em) {
+}
