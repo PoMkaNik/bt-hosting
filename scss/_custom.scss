@@ -453,6 +453,20 @@ footer {
   }
 }
 
+/// login modal
+.reveal {
+  overflow: hidden !important;
+
+  h1 {
+    font-size: 48px;
+  }
+
+  @media screen and (max-width: 39.99875em) {
+    min-height: 340px !important;
+    height: 340px !important;
+  }
+}
+
 @media screen and (max-width: 39.99875em) {
 }
 
