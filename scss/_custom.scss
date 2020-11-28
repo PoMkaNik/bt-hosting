@@ -11,6 +11,8 @@ $callout-background: $light-gray;
 $callout-background-fade: 0;
 $callout-radius: 10px;
 
+$button-responsive-expanded: true;
+
 @mixin sectionPadding() {
   padding: 50px 0;
 }
