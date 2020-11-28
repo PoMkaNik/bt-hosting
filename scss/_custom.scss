@@ -439,6 +439,16 @@ footer {
   h2 {
     font-size: 40px;
   }
+
+  h3 {
+    font-size: 31px;
+  }
+
+  img {
+    @media screen and (max-width: 39.99875em) {
+      padding-bottom: 20px;
+    }
+  }
 }
 
 @media screen and (max-width: 39.99875em) {
