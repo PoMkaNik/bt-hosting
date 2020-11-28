@@ -7,6 +7,14 @@ $dark-gray: #3d3f40;
 $black: #000;
 $white: #fff;
 
+$callout-background: $light-gray;
+$callout-background-fade: 0;
+$callout-radius: 10px;
+
+@mixin sectionPadding() {
+  padding: 50px 0;
+}
+
 /// Top Nav
 
 .top-nav {
@@ -254,6 +262,173 @@ $white: #fff;
       h5 {
         font-size: 20px;
       }
+    }
+  }
+}
+
+/// Domain Search
+
+.domain-search {
+  background: $light-gray;
+  padding: 30px 20px 20px 20px;
+  border-bottom: 2px solid $medium-light-gray;
+  margin-bottom: 30px;
+
+  &__form {
+    input,
+    .input-group-label {
+      border-color: $medium-light-gray;
+    }
+  }
+}
+
+/// home-packages
+
+.home-packages {
+  .tabs {
+    display: flex;
+    border: none;
+    border-bottom: 2px solid $medium-light-gray;
+
+    @media screen and (max-width: 63.99875em) {
+      justify-content: center;
+
+      li {
+        display: block;
+        width: 33%;
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: 39.99875em) {
+      li {
+        word-spacing: 100px;
+      }
+    }
+  }
+
+  .tabs-content {
+    border: none;
+  }
+}
+
+/// package
+
+.package {
+  &__box {
+    text-align: center;
+  }
+
+  &__icon {
+    font-size: 60px;
+
+    &--1 {
+      color: $primary;
+    }
+
+    &--2 {
+      color: $secondary;
+    }
+
+    &--3 {
+      color: $extra;
+    }
+  }
+
+  &__features {
+    margin: 20px 0 30px 0;
+
+    li {
+      padding: 10px 0 10px 0;
+      border-bottom: 1px solid $medium-light-gray;
+    }
+  }
+
+  &__price {
+    margin: 20px 0;
+
+    span {
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    &--1 span {
+      color: $primary;
+    }
+
+    &--2 span {
+      color: $secondary;
+    }
+
+    &--3 span {
+      color: $extra;
+    }
+  }
+}
+
+/// banner
+
+.banner {
+  @include sectionPadding();
+
+  margin-top: 20px;
+  background: $light-gray;
+}
+
+/// statement
+
+.statement {
+  @include sectionPadding();
+  background: $dark-gray;
+  color: $white;
+  text-align: center;
+}
+
+/// advantages
+
+.advantages {
+  @include sectionPadding();
+  background: $primary;
+  color: $white;
+  text-align: center;
+
+  .svg-inline--fa {
+    font-size: 90px;
+    margin-bottom: 10px;
+  }
+
+  .cell {
+    @media screen and (max-width: 63.99875em) {
+      padding-bottom: 50px;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (max-width: 39.99875em) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+/// footer
+
+footer {
+  @include sectionPadding();
+
+  h5 {
+    @media screen and (max-width: 39.99875em) {
+      background: $dark-gray;
+      padding: 10px;
+      color: $white;
+    }
+  }
+
+  img {
+    @media screen and (max-width: 63.99875em) {
+      padding-top: 20px;
     }
   }
 }
