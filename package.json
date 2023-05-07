@@ -1,18 +1,13 @@
 {
-  "name": "foundation-sites-template",
+  "name": "bt-hosting-site",
   "version": "1.0.0",
-  "description": "Basic template for a new Foundation for Sites project.",
+  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
     "build": "gulp sass"
   },
-  "author": "ZURB <foundation@zurb.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zurb/foundation-sites/issues",
-    "email": "foundation@zurb.com"
-  },
+  "author": "Roman Dubovik",
   "dependencies": {
     "foundation-sites": "^6.6.0",
     "jquery": "^3.5.1",
@@ -26,10 +21,5 @@
     "gulp-load-plugins": "^1.1.0",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zurb/foundation-sites-template.git"
-  },
-  "private": true
+  }
 }
